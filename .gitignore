@@ -1,0 +1,5 @@
+.env
+text
+.ipynb_checkpoints
+*.ipynb
+Untitled.ipynb
