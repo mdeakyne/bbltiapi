@@ -3,6 +3,8 @@ from os import getenv as ge
 from dotenv import load_dotenv
 import requests
 
+BACKEND_URL = ge('backend')
+
 load_dotenv()
 session_data={}
 app = jp.app
@@ -31,7 +33,7 @@ async def launch(request):
                 'lti_message_hint':lti_message_hint,
                 'client_id':ge('appid'),
                 'nonce':"fc5fdc6d-5dd6-47f4-b2c9-5d1216e9b771",
-                'redirect_uri':target_link_uri+'api/launch',
+                'redirect_uri':BACKEND_URL,
                 'response_type':'id_token',
                 'scope':'openid',
                 'state':'a unique value '}).url
