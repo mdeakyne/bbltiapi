@@ -7,8 +7,10 @@ verify_ssl = true
 jupyterlab = "*"
 
 [packages]
-justpy = "*"
-uvicorn = "*"
+fastapi = "*"
+bbrest = "*"
+python-multipart = "*"
+python-jose = "*"
 python-dotenv = "*"
 
 [requires]
