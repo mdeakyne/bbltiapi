@@ -37,7 +37,7 @@ async def launch(iss, login_hint, target_link_uri, lti_message_hint):
                 'redirect_uri':target_link_uri,
                 'response_type':'id_token',
                 'scope':'openid',
-                'state':'a unique value '}).url
+                'state':'a unique value'}).url
     print(url)
     return RedirectResponse(url=url)
     
