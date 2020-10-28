@@ -38,6 +38,6 @@ async def launch(iss, login_hint, target_link_uri, lti_message_hint):
                 'response_type':'id_token',
                 'scope':'openid',
                 'state':'a unique value '}).url
-    
+    print(url)
     return RedirectResponse(url=url)
     
