@@ -9,7 +9,7 @@ from os import getenv as ge
 app = FastAPI()
 
 APPID = ge('appid')
-KEY_SET_URL = ge('key_set_url')
+KEY_SET_URL = ge('public_key')
 
 
 @app.get("/")
