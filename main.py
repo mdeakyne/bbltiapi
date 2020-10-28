@@ -23,7 +23,7 @@ async def root(id_token: Optional[str] = Form(...), state: Optional[str] = Form(
     print(key)
     print(id_token)
     print(jwt.decode(id_token, key=key, audience=APPID))
-    return RedirectResponse(url="https://bblti.herokuapp.com", headers={'id_token':id_token})
+    return {'id_token':id_token}
 
 
 @app.get("/launch")
